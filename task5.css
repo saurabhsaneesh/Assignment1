@@ -1,0 +1,65 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: arial, sans-serif;
+    background-color: yellow;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: yellow;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+.sidebar {
+    float: left;
+    width: 150px;
+}
+
+.sidebar a {
+    display: block;
+    width: 120px;
+    padding: 10px;
+    margin-bottom: 5px;
+    background: white;
+    color: blue;
+    text-decoration: none;
+    font-weight: bold;
+    border-right: 30px solid black;
+}
+
+.sidebar a:hover {
+    background: lightgray;
+}
+
+.content {
+    margin-left: 170px;
+}
+
+h1 {
+    font-size: 28px;
+    color: purple;
+}
+
+p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+hr {
+    margin: 20px 0;
+    border: none;
+    border-top: 1px dotted black;
+}
+
+em {
+    color: purple;
+}

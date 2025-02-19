@@ -1,0 +1,6 @@
+.hero-section {
+    background: black;
+    height: 500px;
+    display: flex;
+    text-align: center;
+}

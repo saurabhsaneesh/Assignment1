@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            width: 400px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background: #f9f9f9;
+        }
+        h2 {
+            text-align: center;
+            color: blue;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .gender {
+            display: flex;
+            gap: 10px;
+        }
+        .checkbox-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .submit-btn {
+            width: 100%;
+            background: blue;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .submit-btn:hover {
+            background: darkblue;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Registration Form</h2>
+    <form action="#" method="post">
+        <label>First Name:</label>
+        <input type="text" name="first_name" required>
+
+        <label>Last Name:</label>
+        <input type="text" name="last_name" required>
+
+        <label>Email:</label>
+        <input type="email" name="email" required>
+
+        <label>Password:</label>
+        <input type="password" name="password" required>
+
+        <label>Re-enter Password:</label>
+        <input type="password" name="re_password" required>
+
+        <label>Gender:</label>
+        <div class="gender">
+            <input type="radio" name="gender" value="Male"> Male
+            <input type="radio" name="gender" value="Female"> Female
+        </div>
+
+        <label>Age:</label>
+        <input type="number" name="age" min="1" required>
+
+        <label>Phone Number:</label>
+        <input type="tel" name="phone" required>
+
+        <label>Address:</label>
+        <textarea name="address" rows="3"></textarea>
+
+        <label>State:</label>
+        <input type="text" name="state" required>
+
+        <label>Country:</label>
+        <select name="country">
+            <option value="">Choose your country</option>
+            <option value="India">India</option>
+            <option value="USA">USA</option>
+            <option value="UK">UK</option>
+            <option value="Canada">Canada</option>
+        </select>
+
+        <label>Languages Known:</label>
+        <div class="checkbox-group">
+            <input type="checkbox" name="language" value="English"> English
+            <input type="checkbox" name="language" value="Kannada"> Kannada
+            <input type="checkbox" name="language" value="Hindi"> Hindi
+            <input type="checkbox" name="language" value="Telugu"> Telugu
+        </div>
+
+        <input type="checkbox" name="declaration" required> I declare that all details are true
+
+        <br><br>
+        <button type="submit" class="submit-btn">Register</button>
+    </form>
+</div>
+
+</body>
+</html>

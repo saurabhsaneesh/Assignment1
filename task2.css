@@ -1,0 +1,49 @@
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.vertical-nav {
+    width: 200px;
+    border: 2px solid black;
+    background-color: lightblue;
+}
+
+.vertical-nav a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: blue;
+    font-size: 18px;
+}
+
+.vertical-nav a.active {
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+}
+
+.horizontal-nav {
+    display: flex;
+    border: 2px solid black;
+    width: fit-content;
+    background-color: lightgray;
+}
+
+.horizontal-nav a {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: blue;
+    font-size: 18px;
+    border-right: 2px solid black;
+}
+
+.horizontal-nav a:last-child {
+    border-right: none;
+}
+
+.horizontal-nav a.active {
+    background-color: gray;
+    color: white;
+    font-weight: bold;
+}
