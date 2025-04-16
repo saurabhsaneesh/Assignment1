@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Show Date and Time</title>
+</head>
+
+<body>
+    <script>
+        const container = document.createElement('div');
+        container.style.fontFamily = 'Arial';
+
+        const showDateBtn = document.createElement('button');
+        showDateBtn.textContent = 'show date';
+        const dateOutput = document.createElement('p');
+
+        showDateBtn.onclick = () => {
+            const now = new Date();
+            const day = now.getDate();
+            const month = now.toLocaleString('default', { month: 'long' });
+            const year = now.getFullYear();
+            dateOutput.textContent = `${day}/${month}/${year}`;
+        };
+
+        const showTimeBtn = document.createElement('button');
+        showTimeBtn.textContent = 'show Time';
+        const timeOutput = document.createElement('p');
+
+        showTimeBtn.onclick = () => {
+            const now = new Date();
+            timeOutput.textContent = now.toString();
+        };
+
+        container.appendChild(showDateBtn);
+        container.appendChild(dateOutput);
+        container.appendChild(document.createElement('br'));
+        container.appendChild(showTimeBtn);
+        container.appendChild(timeOutput);
+
+        document.body.appendChild(container);
+    </script>
+</body>
+
+</html>

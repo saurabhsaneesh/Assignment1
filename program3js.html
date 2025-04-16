@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Multiply or Divide</title>
+</head>
+
+<body>
+    <h3>1st Number : <input type="text" id="num1"></h3>
+    <h3>2nd Number : <input type="text" id="num2"></h3>
+
+    <button onclick="multiply()">Multiply</button>
+    <button onclick="divide()">Divide</button>
+
+    <h3>The Result Is :</h3>
+    <p id="result"></p>
+
+    <script>
+        function multiply() {
+            var num1 = parseFloat(document.getElementById("num1").value);
+            var num2 = parseFloat(document.getElementById("num2").value);
+            var result = num1 * num2;
+            document.getElementById("result").innerText = result;
+        }
+
+        function divide() {
+            var num1 = parseFloat(document.getElementById("num1").value);
+            var num2 = parseFloat(document.getElementById("num2").value);
+            if (num2 !== 0) {
+                var result = num1 / num2;
+                document.getElementById("result").innerText = result;
+            } else {
+                document.getElementById("result").innerText = "Cannot divide by zero!";
+            }
+        }
+    </script>
+</body>
+
+</html>

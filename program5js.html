@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Form Validation</title>
+    <style>
+        .error {
+            color: red;
+            font-size: 14px;
+            margin-left: 10px;
+        }
+
+        input,
+        textarea {
+            border: 2px solid #ccc;
+            margin-bottom: 10px;
+        }
+
+        .invalid {
+            border-color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form id="myForm" onsubmit="return validateForm();">
+        <label>Name:</label>
+        <input type="text" id="name">
+        <span class="error" id="nameError"></span><br>
+
+        <label>Email:</label>
+        <input type="text" id="email">
+        <span class="error" id="emailError"></span><br>
+
+        <label>Website:</label>
+        <input type="text" id="website">
+        <span class="error" id="websiteError"></span><br>
+
+        <label>Message:</label>
+        <textarea id="message" rows="4" cols="30"></textarea>
+        <span class="error" id="messageError"></span><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        function validateForm() {
+            let isValid = true;
+
+            // Reset errors
+            document.querySelectorAll('.error').forEach(el => el.textContent = '');
+            document.querySelectorAll('input, textarea').for
+        }
